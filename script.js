@@ -71,4 +71,53 @@ document.addEventListener('DOMContentLoaded', () => {
         // Auto play (optional)
         // setInterval(() => showSlide(currentSlide + 1), 5000);
     }
+
+    // Image Modal Logic
+    const modal = document.getElementById("image-modal");
+    const modalImg = document.getElementById("modal-img");
+    const captionText = document.getElementById("caption");
+    const closeBtn = document.querySelector(".close-modal");
+
+    // Select images to be zoomable (Carousel + Web3 Section)
+    const zoomableImages = document.querySelectorAll('.carousel-slide img, .blockchain-images img');
+
+    zoomableImages.forEach(img => {
+        img.addEventListener('click', function () {
+            modal.style.display = "block";
+            // Add a slight delay to trigger the transition
+            setTimeout(() => modal.classList.add('show'), 10);
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+
+            // Disable scroll
+            document.body.style.overflow = "hidden";
+        });
+    });
+
+    // Close Modal Function
+    function closeModal() {
+        modal.classList.remove('show');
+        setTimeout(() => {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto";
+        }, 300); // Wait for transition
+    }
+
+    if (closeBtn) {
+        closeBtn.addEventListener('click', closeModal);
+    }
+
+    // Close on outside click
+    window.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === "Escape" && modal.style.display === "block") {
+            closeModal();
+        }
+    });
 });
