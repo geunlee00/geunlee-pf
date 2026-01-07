@@ -30,9 +30,45 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    btn.addEventListener('click', checkPassword);
+    if (btn) btn.addEventListener('click', checkPassword);
 
-    input.addEventListener('keypress', (e) => {
-        if (e.key === 'Enter') checkPassword();
-    });
+    if (input) {
+        input.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') checkPassword();
+        });
+    }
+
+    // Carousel Logic
+    const slides = document.querySelectorAll('.carousel-slide img');
+    const dots = document.querySelectorAll('.carousel-dots .dot');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    let currentSlide = 0;
+
+    if (slides.length > 0) {
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+
+            // Loop functionality
+            if (index >= slides.length) currentSlide = 0;
+            else if (index < 0) currentSlide = slides.length - 1;
+            else currentSlide = index;
+
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+        }
+
+        if (nextBtn) nextBtn.addEventListener('click', () => showSlide(currentSlide + 1));
+        if (prevBtn) prevBtn.addEventListener('click', () => showSlide(currentSlide - 1));
+
+        dots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                showSlide(parseInt(dot.dataset.index));
+            });
+        });
+
+        // Auto play (optional)
+        // setInterval(() => showSlide(currentSlide + 1), 5000);
+    }
 });

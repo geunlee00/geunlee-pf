@@ -665,7 +665,6 @@ section {
     padding: 0.3rem 0.8rem;
     border-radius: 20px;
     font-size: 0.8rem;
-    border: 1px solid rgba(56, 189, 248, 0.2);
 }
 
 .card-back {
@@ -688,6 +687,14 @@ section {
 
 /* Contact Section */
 .contact-section {
+    /* Styles removed to prevent conflict with globally centered section titles */
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
@@ -695,6 +702,8 @@ section {
     font-size: 1.2rem;
     color: #cbd5e1;
     margin-bottom: 3rem;
+
+
     line-height: 1.8;
 }
 
@@ -751,9 +760,98 @@ section {
     .projects-grid {
         gap: 2rem;
     }
+}
 
-    .projects-grid {
-        gap: 2rem;
+/* Blockchain Section */
+.blockchain-content {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 20px;
+    padding: 3rem;
+    border: 1px solid var(--glass-border);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.blockchain-text h3 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.blockchain-text p {
+    font-size: 1.1rem;
+    color: #cbd5e1;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.blockchain-list {
+    list-style: none;
+    display: grid;
+    gap: 1rem;
+}
+
+.blockchain-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: #f1f5f9;
+    font-size: 1.05rem;
+}
+
+.blockchain-list li i {
+    color: var(--accent-color);
+}
+
+.blockchain-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.img-card {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    border-radius: 15px;
+    border: 1px solid var(--glass-border);
+    transition: transform 0.3s;
+}
+
+.img-card:hover {
+    transform: translateY(-5px);
+}
+
+.img-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.img-caption {
+    text-align: center;
+    color: #94a3b8;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+@media (min-width: 992px) {
+    .blockchain-content {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .blockchain-text {
+        flex: 1;
+    }
+
+    .blockchain-images {
+        flex: 1;
     }
 }
 
@@ -833,14 +931,226 @@ section {
     justify-content: center;
 }
 
-#login-btn:hover {
-    transform: scale(1.1);
-    background: var(--secondary-color);
+/* =========================================
+   Case Study Page Styles
+   ========================================= */
+
+.case-study-section {
+    padding: 4rem 0 8rem 0;
+    position: relative;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
 }
 
-#login-msg {
-    margin-top: 1rem;
+.case-study-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+/* Left: Content Styles */
+.badge-highlight {
+    display: inline-block;
+    background: rgba(244, 114, 182, 0.1);
     color: var(--accent-color);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
     font-size: 0.9rem;
-    min-height: 20px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(244, 114, 182, 0.2);
+}
+
+.context-box {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-left: 3px solid var(--glass-border);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.02) 0%, transparent 100%);
+    border-radius: 0 10px 10px 0;
+}
+
+.context-box h3 {
+    font-size: 1.3rem;
+    color: #f1f5f9;
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.context-box h3 i {
+    color: var(--secondary-color);
+}
+
+.highlight-box {
+    border-left-color: var(--primary-color);
+}
+
+.highlight-box h3 i {
+    color: var(--primary-color);
+}
+
+.context-box p {
+    color: #cbd5e1;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.tech-stack-display h4 {
+    color: #94a3b8;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.tech-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.badge {
+    background: rgba(56, 189, 248, 0.1);
+    color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border: 1px solid rgba(56, 189, 248, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform 0.2s;
+}
+
+.badge:hover {
+    transform: translateY(-2px);
+    background: rgba(56, 189, 248, 0.2);
+}
+
+/* Right: Visual Styles (MacBook Frame) */
+.macbook-frame {
+    position: relative;
+    background: #0f172a;
+    border-radius: 12px;
+    padding: 2% 2% 4% 2%;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    border: 1px solid #334155;
+    margin-top: 2rem;
+}
+
+.macbook-frame::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 5%;
+    width: 90%;
+    height: 15px;
+    background: #1e293b;
+    border-radius: 0 0 20px 20px;
+    z-index: -1;
+}
+
+.screen-content {
+    background: #000;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    aspect-ratio: 16/10;
+}
+
+/* Carousel Styles */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-slide img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-slide img.active {
+    opacity: 1;
+}
+
+.carousel-controls .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+    z-index: 10;
+}
+
+.carousel-btn:hover {
+    background: var(--primary-color);
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    z-index: 10;
+}
+
+.carousel-dots .dot {
+    width: 8px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.carousel-dots .dot.active {
+    background: var(--primary-color);
+    width: 25px;
+    border-radius: 10px;
+}
+
+/* Responsive Case Study */
+@media (max-width: 992px) {
+    .case-study-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .case-study-visual {
+        order: -1;
+    }
+
+    .case-study-section {
+        padding-top: 2rem;
+    }
 }
