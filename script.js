@@ -90,4 +90,36 @@ document.addEventListener('DOMContentLoaded', () => {
             closeModal();
         }
     });
+
+    // Scroll Spy (Active Navigation)
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.3 // Trigger when 30% of section is visible
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Get the id of the section
+                const id = entry.target.getAttribute('id');
+
+                // Remove active class from all links
+                navLinks.forEach(link => link.classList.remove('active'));
+
+                // Add active class to corresponding link
+                const activeLink = document.querySelector(`.nav-links a[href="#${id}"]`);
+                if (activeLink) {
+                    activeLink.classList.add('active');
+                }
+            }
+        });
+    }, observerOptions);
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
 });
