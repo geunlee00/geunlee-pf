@@ -1,0 +1,10 @@
+# Resume and Personal Files
+*.pdf
+*.doc
+*.docx
+이근준 개인이력카드.html
+이력서_*-이미지-*.jpg
+
+# System Files
+.DS_Store
+Thumbs.db
