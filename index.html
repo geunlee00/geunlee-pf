@@ -7,654 +7,476 @@
     <title>이근준 | AI 서비스 백엔드 개발자</title>
     <meta name="description" content="현장에서 3년 동안 서비스를 만들고 운영한 백엔드 개발자 이근준의 포트폴리오입니다. 데이터 파이프라인, RAG·LLM 서비스, 배포와 운영.">
     <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
     <link rel="stylesheet" href="styles.css">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
-        rel="stylesheet">
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
 
-    <div class="cursor-glow" aria-hidden="true"></div>
-
-    <header class="navbar">
-        <a href="#home" class="logo">LeeGeunJun<span class="dot">.</span></a>
-        <nav class="nav-links" id="nav-links">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#experience">Experience</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="nav-links">
-            <i class="fas fa-bars"></i>
-        </button>
-    </header>
+    <nav class="nav">
+        <div class="wrap">
+            <a href="#hello" class="nav-name">이근준</a>
+            <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links">메뉴</button>
+            <div class="nav-links" id="nav-links">
+                <a href="#journey">걸어온 길</a>
+                <a href="#projects">만든 것들</a>
+                <a href="#work">일해 온 곳</a>
+                <a href="#skills">기술</a>
+                <a href="#contact">연락</a>
+            </div>
+        </div>
+    </nav>
 
     <main>
-        <!-- Home Section -->
-        <section id="home" class="hero-section">
-            <div class="hero-container">
-                <div class="hero-content">
-                    <p class="greeting">안녕하세요, 저는</p>
-                    <h1 class="name">이근준<span class="dot">.</span></h1>
-                    <h2 class="title">AI 서비스 백엔드 개발자</h2>
-                    <p class="description">
-                        현장에서 3년 동안 서비스를 만들고 운영한 백엔드 개발자가,<br>
-                        이제 데이터와 LLM으로 돌아가는 서비스를 만듭니다.
-                    </p>
-                    <ul class="keyword-list">
-                        <li>데이터 파이프라인</li>
-                        <li>RAG · LLM 서비스</li>
-                        <li>배포와 운영</li>
-                    </ul>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn primary-btn">View Projects</a>
-                        <a href="mailto:kendong1818@gmail.com" class="btn secondary-btn"><i class="fas fa-envelope"></i> Contact Me</a>
-                        <a href="https://github.com/geunlee00" class="btn icon-btn" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <!-- 인사 -->
+        <section id="hello" class="hello">
+            <div class="wrap">
+                <div class="hello-top">
+                    <div>
+                        <h1>안녕하세요,<br>이근준입니다.</h1>
+                        <p class="role">AI 서비스 백엔드 개발자</p>
                     </div>
                 </div>
-                <div class="hero-visual" aria-hidden="true">
-                    <div class="shape-blob"></div>
+                <p>
+                    회사에서 3년 동안 ERP와 공공기관 웹 서비스를 만들고 지켰습니다.
+                    두 명이서 회사의 모든 물류가 지나가는 ERP를 새 시스템으로 옮기고 운영하면서,
+                    <strong>서비스는 멈추지 않는 것이 가장 중요하다</strong>는 걸 몸으로 배웠습니다.
+                </p>
+                <p>
+                    회사를 나온 뒤에는 방송통신대에서 컴퓨터과학을 공부하며 다른 진로도 준비해 봤습니다.
+                    그 시간을 지나며 제가 정말 하고 싶은 일은 결국 서비스를 만드는 일이라는 걸 알게 됐고,
+                    이번에는 데이터와 AI로 더 똑똑한 서비스를 만들고 싶어 2026년 AI 캠프에서 다시 배우기 시작했습니다.
+                    지금은 데이터를 모으고, 검색하고, LLM으로 판단하는 서비스를 실제로 돌아가게 만드는 일을 하고 있습니다.
+                </p>
+                <div class="hello-links">
+                    <a class="pill primary" href="#projects">만든 것 보기</a>
+                    <a class="pill" href="mailto:kendong1818@gmail.com">kendong1818@gmail.com</a>
+                    <a class="pill" href="https://github.com/geunlee00" target="_blank" rel="noopener">GitHub</a>
                 </div>
             </div>
         </section>
 
-        <!-- Stats Band -->
-        <section class="stats-band" aria-label="요약">
-            <div class="container stats-grid">
-                <div class="stat">
-                    <span class="stat-value">3년 4개월</span>
-                    <span class="stat-label">실무 경력</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-value">6개</span>
-                    <span class="stat-label">고객사 프로젝트</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-value">5개</span>
-                    <span class="stat-label">AI 캠프 팀 프로젝트</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-value">2회</span>
-                    <span class="stat-label">AWS 배포</span>
-                </div>
+        <!-- 걸어온 길 -->
+        <section id="journey">
+            <div class="wrap">
+                <h2>걸어온 길<small>웹 개발자로 시작해, 데이터와 AI를 다루는 백엔드 개발자가 되기까지</small></h2>
+                <ol class="journey">
+                    <li>
+                        <p class="when">2021.08</p>
+                        <h3>(주)코젠아이에서 개발자로 첫걸음</h3>
+                        <p>전자연구노트 신규 솔루션에서 WBS 기능과 연구노트 관리 페이지를 만들었습니다.</p>
+                    </li>
+                    <li class="key">
+                        <p class="when">2022.03 – 2024.11</p>
+                        <h3>(주)제타시스템, 두 명이서 ERP를 통째로 옮기다</h3>
+                        <p>오텍캐리어 ERP의 영업부터 서비스 접수까지 전 모듈을 맡아 새 시스템으로 옮기고 고도화했고, 운영까지 이어서 책임졌습니다.</p>
+                    </li>
+                    <li>
+                        <p class="when">2024.12 – 2025.12</p>
+                        <h3>방송통신대 공부와 진로 준비</h3>
+                        <p>방송통신대 컴퓨터과학과 공부를 이어 가며 다른 진로도 준비해 봤고, 그 과정에서 다시 개발로 돌아가기로 마음먹었습니다.</p>
+                    </li>
+                    <li>
+                        <p class="when">2026.01 – 03</p>
+                        <h3>다시 손에 잡은 코드</h3>
+                        <p>AI 도구로 블록체인 대출 서비스를 기획하고, React로 화면을 만들어 보며 감을 되찾았습니다.</p>
+                    </li>
+                    <li class="key">
+                        <p class="when">2026.04</p>
+                        <h3>SK네트웍스 Family AI 캠프 32기 시작</h3>
+                        <p>머신러닝부터 LLM, 멀티 에이전트, 클라우드 배포까지 다섯 번의 팀 프로젝트로 배웠습니다.</p>
+                    </li>
+                    <li>
+                        <p class="when">2026.05 · 1차</p>
+                        <h3>공공 데이터를 지도와 대시보드로 — S car</h3>
+                    </li>
+                    <li>
+                        <p class="when">2026.06 · 2차</p>
+                        <h3>머신러닝 모델을 서비스로, 로컬 LLM까지 — Signal-T</h3>
+                    </li>
+                    <li>
+                        <p class="when">2026.07 – 08 · 3·4차</p>
+                        <h3>RAG 서비스 백엔드, 그리고 처음 해 본 AWS 배포 — PetTriage</h3>
+                    </li>
+                    <li class="key">
+                        <p class="when">2026.08 – 10 · 최종</p>
+                        <h3>공고 데이터 파트를 혼자, 수집부터 배포까지 — S-Brain</h3>
+                    </li>
+                    <li>
+                        <p class="when">2026.10</p>
+                        <h3>내가 쓰려고 만든 바탕화면 달력, v1.4.0 출시</h3>
+                    </li>
+                </ol>
             </div>
         </section>
 
-        <!-- About Section -->
-        <section id="about" class="about-section">
-            <div class="container">
-                <h2 class="section-title">About Me</h2>
-                <div class="about-text">
-                    <p>
-                        Java·Spring으로 ERP와 공공기관 웹 서비스를 3년 넘게 개발하고 운영했습니다.
-                        두 명이서 회사의 모든 물류가 거쳐 가는 ERP를 새 시스템으로 옮기고 고도화했고,
-                        이후 운영까지 맡으며 <strong>"멈추지 않고 돌아가는 서비스"</strong>가 무엇인지 배웠습니다.
-                    </p>
-                    <p>
-                        2026년에는 SK네트웍스 Family AI 캠프에서 데이터 수집, 머신러닝, RAG, 멀티 에이전트 서비스를
-                        다섯 번의 팀 프로젝트로 만들었습니다. 최종 프로젝트에서는 정부지원사업 공고 데이터 파트를 혼자 맡아
-                        매일 도는 수집 배치, 검색과 자격 판정, AWS 배포까지 책임졌습니다.
-                    </p>
-                    <p>
-                        모델 성능만큼 서비스의 안정성과 비용을 함께 봅니다.
-                        AI 도구를 적극적으로 쓰되 결과는 테스트와 평가로 검증하고,
-                        쓰지 않기로 한 기술도 그 이유를 기록으로 남깁니다.
-                    </p>
-                </div>
-            </div>
-        </section>
+        <!-- 만든 것들 -->
+        <section id="projects">
+            <div class="wrap">
+                <h2>제가 만든 것들</h2>
 
-        <!-- Projects Section -->
-        <section id="projects" class="projects-section">
-            <div class="container">
-                <h2 class="section-title">Key Projects</h2>
+                <article class="project">
+                    <p class="project-label">AI 캠프 최종 프로젝트</p>
+                    <h3>S-Brain</h3>
+                    <p class="one-line">창업 아이템에 맞는 정부지원사업을 찾아, 사업계획서까지 만들어 주는 서비스</p>
+                    <p class="meta">2026.08 – 2026.10 · 5명</p>
 
-                <!-- Project 1: S-Brain -->
-                <article class="project-feature">
-                    <header class="project-head">
-                        <span class="project-index">01</span>
-                        <div>
-                            <h3 class="project-name">S-Brain</h3>
-                            <p class="project-summary">창업 아이템에 맞는 정부지원사업을 찾아, 사업계획서까지 만들어 주는 멀티 에이전트 서비스</p>
-                            <ul class="project-meta">
-                                <li>2026.08 – 2026.10</li>
-                                <li>팀 5명</li>
-                                <li class="meta-role">Data &amp; Matching 담당 (공고 데이터·매칭 파트 단독 개발, 인프라·배포 공동)</li>
-                            </ul>
-                        </div>
-                    </header>
+                    <div class="my-part">
+                        <b>제가 맡은 부분</b>
+                        <p>공고 데이터와 매칭 파트를 혼자 만들었습니다. 매일 공고를 모으고, 맞는 공고를 찾아 주고, 서버에 배포하는 것까지요.</p>
+                    </div>
 
-                    <div class="project-body">
-                        <div class="project-text">
-                            <h4>문제</h4>
-                            <p>
-                                정부지원사업 공고는 여러 기관에 흩어져 있고, 지원 자격은 첨부 문서(PDF·HWP) 안에 숨어 있습니다.
-                                그래서 창업자가 사업계획서를 다 쓴 뒤에야 자격이 안 된다는 걸 알게 되는 일이 생깁니다.
-                            </p>
-                            <h4>내가 한 일</h4>
-                            <ul class="work-list">
-                                <li><strong>공고 수집 파이프라인 구축</strong> — 공공 API 2곳에서 공고를 모아 정규화하고, PDF·HWP 첨부 본문 추출 → 임베딩 → LLM 자격 판정까지 14단계를 매일 자동으로 실행했습니다 (cron·systemd).</li>
-                                <li><strong>매칭 검색 설계</strong> — 지역·업력·사업자 유형 같은 정형 조건으로 먼저 거른 뒤, 의미 검색과 BM25를 RRF로 합친 하이브리드 검색으로 순위를 매겼습니다. 개인사업자·법인이 신청할 수 없는 공고는 차단하고, 원문 대조를 마친 공고만 가산점을 반영했습니다.</li>
-                                <li><strong>팀 서비스 연결과 배포</strong> — 조율 에이전트가 호출하는 HTTP API 4개를 설계했고(연결 시험 16/16 통과), AWS CloudFormation 스택과 한 번에 올리고 내리는 배포 스크립트를 작성했습니다.</li>
-                                <li><strong>평가 체계 구축</strong> — 평가 질의 58개, 판정 1,617쌍으로 평가셋을 만들어 개선 전후를 측정했습니다.</li>
-                                <li><strong>AI 도구를 활용한 개발과 교차 검수</strong> — Claude·Codex로 구현하고, 다른 모델이 서로의 결과를 검수하는 방식으로 품질을 관리했습니다. 검수 요청·결과·재확인을 모두 문서로 남겼습니다.</li>
-                            </ul>
-                        </div>
+                    <p>정부지원사업 공고는 여러 기관에 흩어져 있고, 지원 자격은 첨부 문서 안에 숨어 있습니다. 그래서 창업자가 계획서를 다 쓴 뒤에야 자격이 안 된다는 걸 알게 되기도 합니다.</p>
 
-                        <div class="project-media">
-                            <figure class="figure">
-                                <img src="assets/images/sbrain-architecture.png" alt="S-Brain 전체 시스템 구성도: AWS 위의 웹 서버, 공고 서버, RDS MySQL, S3" loading="lazy" data-zoom>
-                                <figcaption>전체 시스템 구성도 — AWS CloudFormation 스택 하나로 생성·삭제</figcaption>
+                    <h4>한 일</h4>
+                    <ul>
+                        <li>공공 API 2곳에서 공고를 모아, PDF·HWP 첨부 본문 추출부터 LLM 자격 판정까지 14단계를 매일 자동으로 돌렸습니다.</li>
+                        <li>지역·업력·사업자 유형으로 먼저 거르고, 의미 검색과 키워드 검색을 합친 방식으로 순위를 매겼습니다.</li>
+                        <li>다른 에이전트가 부르는 API 4개를 만들고, AWS에 한 번에 올리고 내리는 배포 스크립트를 썼습니다.</li>
+                        <li>Claude·Codex로 구현하고 서로 다른 모델이 교차 검수하게 해서, 품질을 테스트와 기록으로 확인했습니다.</li>
+                    </ul>
+
+                    <div class="numbers">
+                        <div><b>49% → 62%</b>추천 상위 3건이 맞는 비율</div>
+                        <div><b>25% → 0%</b>신청 못 하는 공고 노출</div>
+                        <div><b>28 / 28</b>매일 수집 배치 성공</div>
+                    </div>
+                    <p class="note">2026-10-15 지표 보고서 기준. 적합 비율은 LLM 판정이 대부분이라 참고 지표로 봤습니다.</p>
+
+                    <figure>
+                        <a href="assets/images/sbrain-data-flow.png" target="_blank" rel="noopener"><img src="assets/images/sbrain-data-flow.png" alt="매일 수집 배치 14단계와 추천 흐름" loading="lazy"></a>
+                        <figcaption>제가 만든 매일 수집 배치 14단계와 추천 흐름</figcaption>
+                    </figure>
+
+                    <details class="deep">
+                        <summary>자세히 보기 — 구조와 수치</summary>
+                        <div class="deep-body">
+                            <h5>전체 구조</h5>
+                            <p>AWS CloudFormation 스택 하나로 네트워크, 서버, DB를 한 번에 만들고 지웁니다. 공고 서버는 바깥 주소가 없는 사설 영역에 두고, 웹 서버에서만 접근하게 했습니다. 공고와 벡터는 RDS MySQL에 저장하고, 서버가 켜질 때 메모리에 올려 직접 계산합니다.</p>
+                            <figure>
+                                <a href="assets/images/sbrain-architecture.png" target="_blank" rel="noopener"><img src="assets/images/sbrain-architecture.png" alt="S-Brain 전체 시스템 구성도" loading="lazy"></a>
+                                <figcaption>전체 시스템 구성도 (웹 서버 EC2, 공고 서버 EC2, RDS MySQL, S3)</figcaption>
                             </figure>
-                            <div class="figure-row">
-                                <figure class="figure">
-                                    <img src="assets/images/sbrain-data-flow.png" alt="공고 데이터 흐름: 매일 수집 배치 14단계와 추천 요청 흐름" loading="lazy" data-zoom>
-                                    <figcaption>매일 수집 배치 14단계와 추천 흐름</figcaption>
-                                </figure>
-                                <figure class="figure">
-                                    <img src="assets/images/sbrain-accuracy.png" alt="추천 정확도 비교 그래프: 처음(의미 검색만)과 지금 서비스" loading="lazy" data-zoom>
-                                    <figcaption>추천 정확도: 처음과 지금</figcaption>
-                                </figure>
+
+                            <h5>추천이 만들어지는 과정</h5>
+                            <ol>
+                                <li><strong>정형 필터</strong> — 신청자 유형, 업력, 접수 기간, 예비창업 조건을 통과한 공고만 남깁니다.</li>
+                                <li><strong>하이브리드 검색</strong> — 의미 검색(BGE-M3)과 단어 검색(BM25) 결과를 RRF로 합칩니다.</li>
+                                <li><strong>규칙 재정렬</strong> — 지역이 다르거나 신청이 어려워 보이는 공고는 뒤로 보냅니다.</li>
+                                <li><strong>후보 10건 → 화면 3건</strong> — 적합도와 가산점으로 3건을 고르고, 자격을 판정합니다.</li>
+                            </ol>
+
+                            <h5>추천 품질</h5>
+                            <div class="table-wrap">
+                                <table>
+                                    <thead>
+                                        <tr><th>지표</th><th>처음 (의미 검색만)</th><th>지금 서비스</th></tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td>상위 3건 적합률 (낮게 센 값)</td><td>49.4%</td><td class="num">61.5%</td></tr>
+                                        <tr><td>상위 3건 적합률 (높게 센 값)</td><td>60.9%</td><td class="num">74.1%</td></tr>
+                                        <tr><td>상위 10건 중 신청 불가 공고</td><td>24.7%</td><td class="num">0%</td></tr>
+                                        <tr><td>하이브리드 검색 정밀도 (P@3)</td><td>0.500</td><td class="num">0.641</td></tr>
+                                    </tbody>
+                                </table>
                             </div>
-                        </div>
-                    </div>
+                            <p class="note">평가 질의 58개, 판정 1,617쌍 기준. 상위 3건 적합률은 +12.1%p 올랐습니다(95% 구간 +3.4~+20.7%p). 판정의 91%가 LLM 참고 정답이고 사람과 LLM의 일치율이 64%라, 팀 기준(70%)에 따라 참고 수치로 봤습니다.</p>
+                            <figure>
+                                <a href="assets/images/sbrain-accuracy.png" target="_blank" rel="noopener"><img src="assets/images/sbrain-accuracy.png" alt="추천 정확도 비교 그래프" loading="lazy"></a>
+                                <figcaption>추천 정확도: 처음과 지금 (2026-10-14 측정)</figcaption>
+                            </figure>
 
-                    <h4 class="block-title">결과 <span class="block-note">2026-10-15 지표 보고서 기준</span></h4>
-                    <div class="metric-grid">
-                        <div class="metric">
-                            <span class="metric-value">49.4% <i class="fas fa-arrow-right"></i> 61.5%</span>
-                            <span class="metric-label">상위 3건 적합률 <sup>1</sup></span>
+                            <h5>운영 수치</h5>
+                            <ul>
+                                <li>공고 3,072건 누적, 첨부 본문 추출 성공률 91.8%</li>
+                                <li>매일 배치 28/28회 성공, 서버 이전 후 13일 연속 가동, 1회 실행 중앙값 6.6분</li>
+                                <li>응답 시간 로컬 235.6ms, 실서버 400ms · 하루 LLM 비용 약 $0.05</li>
+                                <li>다른 에이전트와의 연결 시험 16/16 통과, 자격 판정 2,971건 형식 오류 0건</li>
+                                <li>자동 테스트 686개 → 1,111개</li>
+                            </ul>
                         </div>
-                        <div class="metric">
-                            <span class="metric-value">24.7% <i class="fas fa-arrow-right"></i> 0%</span>
-                            <span class="metric-label">상위 10건 중 신청 불가 공고</span>
-                        </div>
-                        <div class="metric">
-                            <span class="metric-value">0.500 <i class="fas fa-arrow-right"></i> 0.641</span>
-                            <span class="metric-label">하이브리드 검색 정밀도 (P@3)</span>
-                        </div>
-                        <div class="metric">
-                            <span class="metric-value">28 / 28</span>
-                            <span class="metric-label">매일 배치 성공 (서버 이전 후 13일 연속 가동)</span>
-                        </div>
-                        <div class="metric">
-                            <span class="metric-value">400ms</span>
-                            <span class="metric-label">실서버 응답 시간</span>
-                        </div>
-                        <div class="metric">
-                            <span class="metric-value">$0.05</span>
-                            <span class="metric-label">하루 LLM 비용 (약)</span>
-                        </div>
-                    </div>
-                    <ul class="result-extra">
-                        <li>공고 3,072건 누적, 첨부 본문 추출 성공률 91.8%, 배치 1회 실행 중앙값 6.6분</li>
-                        <li>자동 테스트 686개 → 1,111개</li>
-                    </ul>
-                    <p class="footnote"><sup>1</sup> 판정의 대부분을 LLM이 했고 사람과 LLM의 판정 일치율이 64%라, 팀 기준(70%)에 따라 참고 지표로 표시했습니다.</p>
+                    </details>
 
-                    <div class="story">
-                        <h4><i class="fas fa-lightbulb"></i> 어려웠던 점 — 정확도를 올린 모델을 일부러 쓰지 않은 이유</h4>
+                    <details>
+                        <summary>어려웠던 점 — 정확도를 올린 모델을 일부러 쓰지 않은 이유</summary>
                         <dl>
-                            <div><dt>상황</dt><dd>검색 결과의 순위를 다시 매기는 리랭커를 LoRA로 학습해 nDCG@3를 0.718 → 0.862로 올렸습니다.</dd></div>
-                            <div><dt>고민</dt><dd>GPU에서도 질의당 약 1초가 걸려 응답이 느려지고 서버 비용이 커졌습니다. 시험 질의도 17개뿐이라 개선 폭을 확신하기 어려웠습니다.</dd></div>
-                            <div><dt>결정</dt><dd>리랭커는 서비스에 넣지 않고, 정형 조건 필터와 하이브리드 검색으로 품질을 올렸습니다. 이 판단을 포함해 설계 결정 21개를 근거와 함께 기록으로 남겼습니다.</dd></div>
+                            <dt>상황</dt>
+                            <dd>순위를 다시 매기는 모델(리랭커)을 학습해 정확도를 0.72에서 0.86으로 올렸습니다.</dd>
+                            <dt>고민</dt>
+                            <dd>질문 하나에 1초씩 걸려 느려지고 서버 비용이 커졌습니다. 시험 질문도 17개뿐이라 확신하기 어려웠습니다.</dd>
+                            <dt>결정</dt>
+                            <dd>서비스에는 넣지 않고, 조건 필터와 검색 방식을 다듬어 품질을 올렸습니다. 그 이유를 설계 기록으로 남겼습니다.</dd>
                         </dl>
+                    </details>
+
+                    <div class="learned">
+                        <b>배운 것</b>
+                        가장 정확한 모델보다 서비스에 맞는 모델이 중요하다는 것. 정확도와 속도, 비용을 함께 재고 결정하는 법을 배웠습니다.
                     </div>
 
-                    <div class="project-foot">
-                        <div class="tags">
-                            <span>Python</span><span>FastAPI</span><span>MySQL</span><span>SQLAlchemy</span><span>BGE-M3</span><span>BM25</span><span>RRF</span><span>OpenAI API</span><span>pdfplumber</span><span>scikit-learn</span><span>PEFT LoRA</span><span>Docker</span><span>AWS</span><span>CloudFormation</span><span>Claude · Codex</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN32-FINAL-1TEAM/tree/main/data-collection" target="_blank" rel="noopener"><i class="fab fa-github"></i> 팀 저장소 (내 파트)</a>
-                        </div>
-                    </div>
+                    <p class="stack">Python · FastAPI · MySQL · BGE-M3 · BM25 · OpenAI API · AWS CloudFormation</p>
+                    <div class="links"><a href="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN32-FINAL-1TEAM/tree/main/data-collection" target="_blank" rel="noopener">팀 저장소에서 제 파트 보기 →</a></div>
                 </article>
 
-                <!-- Project 2: PetTriage -->
-                <article class="project-feature">
-                    <header class="project-head">
-                        <span class="project-index">02</span>
-                        <div>
-                            <h3 class="project-name">PetTriage</h3>
-                            <p class="project-summary">반려동물이 무언가를 먹었을 때, "지금 병원에 가야 하나?"에 근거와 함께 답하는 AI</p>
-                            <ul class="project-meta">
-                                <li>2026.07 – 2026.08</li>
-                                <li>팀 4명</li>
-                                <li class="meta-role">백엔드 (3차) → AWS 배포 담당 (4차)</li>
-                            </ul>
-                        </div>
-                    </header>
+                <article class="project">
+                    <p class="project-label">AI 캠프 3·4차 프로젝트</p>
+                    <h3>PetTriage</h3>
+                    <p class="one-line">반려동물이 무언가를 먹었을 때, "지금 병원에 가야 하나?"에 근거와 함께 답하는 AI</p>
+                    <p class="meta">2026.07 – 2026.08 · 4명</p>
 
-                    <div class="project-body">
-                        <div class="project-text">
-                            <h4>문제</h4>
-                            <p>
-                                반려동물이 초콜릿이나 포도를 먹었을 때, 보호자는 인터넷의 엇갈린 정보에 기대게 됩니다.
-                                PetTriage는 진단 대신, 근거 자료를 찾아 지금 해야 할 행동을 4단계(응급 · 지금 연락 · 곧 방문 · 관찰)로 알려 줍니다.
-                                원칙은 <strong>"RAG가 근거를 찾고, 코드가 등급을 정하고, LLM은 그 위에서만 말한다"</strong>입니다.
-                            </p>
-                            <h4>내가 한 일</h4>
-                            <p class="work-phase">3차 — 서비스 백엔드 (FastAPI)</p>
-                            <ul class="work-list">
-                                <li><strong>계정·반려동물·다이어리 API와 DB 설계</strong> — 회원가입·로그인(JWT)과 반려동물 프로필 API를 처음 구현했고, 다이어리를 메모리 저장에서 DB 영구 저장으로 바꿨습니다. 이때 만든 "하루 1건" 저장 방식은 팀 설계 결정으로 기록됐습니다.</li>
-                                <li><strong>LangGraph를 채팅 API에 연결</strong> — 질문 분류(LLM이 실패하면 키워드로 대신 분류), 종·물질·체중·섭취량 추출, 근거 검색 노드를 구현했습니다. <code>/api/ask</code>에 그래프 엔진을 연결하고, 대화 이력 저장이 실패해도 답변은 나가도록 했습니다.</li>
-                                <li><strong>근거 자료 수집</strong> — 자유롭게 쓸 수 있는 학술·공공 자료를 확보했습니다. 이 자료가 독성 기준 수치의 주된 출처가 됐습니다.</li>
-                            </ul>
-                            <p class="work-phase">4차 — 웹 전환과 AWS 배포 (Django)</p>
-                            <ul class="work-list">
-                                <li><strong>AWS 배포</strong> — ALB와 ACM 인증서로 HTTPS를 적용하고, EC2의 nginx가 Django와 FastAPI로 요청을 나눠 보내도록 구성했습니다. 외부에는 80·443 포트만 열고, systemd로 재부팅 후 자동 실행되게 했으며, 도메인 연결까지 마쳤습니다.</li>
-                                <li><strong>채팅·다이어리 화면 Django 전환</strong> — 3차의 토큰 인증 화면을 세션 인증으로 바꾸고, 공통 레이아웃과 사이드바를 만들었습니다.</li>
-                                <li><strong>산출물</strong> — AWS 배포계획서, 요구사항정의서(52건)를 작성했습니다.</li>
-                            </ul>
-                        </div>
+                    <div class="my-part">
+                        <b>제가 맡은 부분</b>
+                        <p>3차에는 계정·반려동물·다이어리 백엔드와 AI 채팅 연결을, 4차에는 AWS 실서버 배포를 맡았습니다.</p>
+                    </div>
 
-                        <div class="project-media">
-                            <div class="diagram">
-                                <p class="diagram-title">AWS 배포 구조 (4차)</p>
-                                <div class="flow">
-                                    <div class="flow-node">
-                                        <span class="flow-label">사용자</span>
-                                        <span class="flow-sub">HTTPS 443</span>
-                                    </div>
-                                    <div class="flow-node accent">
-                                        <span class="flow-label">ALB</span>
-                                        <span class="flow-sub">ACM 인증서 · 3개 가용 영역</span>
-                                    </div>
-                                    <div class="flow-node accent">
-                                        <span class="flow-label">EC2 · nginx :80</span>
-                                        <span class="flow-sub">ALB 보안그룹에서만 접근</span>
-                                    </div>
-                                    <div class="flow-group">
-                                        <span class="flow-group-title">서버 안에서만 접근 · systemd 자동 실행</span>
-                                        <div class="flow-node small">
-                                            <span class="flow-label">Django :8000</span>
-                                            <span class="flow-sub">웹 화면 · 계정 · 다이어리</span>
-                                        </div>
-                                        <div class="flow-node small">
-                                            <span class="flow-label">FastAPI :8001</span>
-                                            <span class="flow-sub">AI 추론 · LangGraph</span>
-                                        </div>
-                                        <div class="flow-node small">
-                                            <span class="flow-label">MySQL :3306</span>
-                                            <span class="flow-sub">데이터</span>
-                                        </div>
-                                    </div>
+                    <p>진단 대신, 근거 자료를 찾아 지금 해야 할 행동을 응급·지금 연락·곧 방문·관찰 4단계로 알려 주는 서비스입니다. 등급은 코드가 정하고, LLM은 그 위에서만 말하게 설계했습니다.</p>
+
+                    <h4>한 일</h4>
+                    <ul>
+                        <li>회원가입·로그인과 반려동물 API를 처음 구현하고, 다이어리를 DB에 영구 저장하도록 바꿨습니다.</li>
+                        <li>LangGraph의 앞단(질문 분류, 정보 추출, 근거 검색)을 만들고 채팅 API에 연결했습니다.</li>
+                        <li>ALB와 HTTPS 인증서, nginx, systemd로 서버를 구성하고 도메인까지 연결했습니다.</li>
+                    </ul>
+
+                    <div class="numbers">
+                        <div><b>4건</b>배포 중 만난 문제를 원인별로 해결</div>
+                        <div><b>45% → 65%</b>평가 통과율 (팀 성과)</div>
+                    </div>
+
+                    <details class="deep">
+                        <summary>자세히 보기 — 배포 구조와 AI 흐름</summary>
+                        <div class="deep-body">
+                            <h5>배포 구조 (4차, 제가 맡은 부분)</h5>
+                            <div class="flow">
+                                <div class="node"><b>사용자</b><small>HTTPS 443</small></div>
+                                <div class="node key"><b>로드밸런서 (ALB)</b><small>ACM 인증서 · 3개 가용 영역</small></div>
+                                <div class="node key"><b>EC2 · nginx :80</b><small>로드밸런서 보안그룹에서만 접근</small></div>
+                                <div class="group">
+                                    <span class="group-title">서버 안에서만 접근 · systemd 자동 실행</span>
+                                    <div class="node"><b>Django :8000</b><small>웹 화면 · 계정 · 다이어리</small></div>
+                                    <div class="node"><b>FastAPI :8001</b><small>AI 추론 · LangGraph</small></div>
+                                    <div class="node"><b>MySQL :3306</b><small>데이터</small></div>
                                 </div>
                             </div>
-                            <figure class="figure">
-                                <img src="assets/images/pettriage-graph.png" alt="PetTriage LangGraph 질의 그래프: 노드 18개" loading="lazy" data-zoom>
-                                <figcaption>LangGraph 질의 흐름 — 노드 18개 (3차 팀 산출물)</figcaption>
+                            <p class="note">서버: EC2 m7i-flex.large, 암호화된 EBS gp3 50GB · 상태 검사: 로그인 페이지 200 응답 (배포계획서 기준)</p>
+
+                            <h5>배포 중 해결한 문제 4건</h5>
+                            <div class="table-wrap">
+                                <table>
+                                    <thead>
+                                        <tr><th>문제</th><th>해결</th></tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td>로드밸런서에 가용 영역(2d) 연결 누락</td><td>빠진 가용 영역을 연결</td></tr>
+                                        <tr><td>상태 검사가 302(다른 페이지로 이동)를 받음</td><td>200을 주는 로그인 페이지로 검사 경로 변경</td></tr>
+                                        <tr><td>프록시 헤더가 두 번 붙어 HTTPS 요청이 400</td><td>프록시 설정을 파일 하나로 통일</td></tr>
+                                        <tr><td>HTTPS가 로드밸런서에서 끝나, CSRF 검사에 막혀 403</td><td>신뢰할 출처(<code>CSRF_TRUSTED_ORIGINS</code>)에 https 도메인을 등록하고, 로드밸런서 뒤에서도 https 접속으로 인식하도록 설정</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <h5>AI가 답하는 흐름 (3차, 팀 설계)</h5>
+                            <p>LangGraph 노드 18개가 질문 분류 → 정보 추출 → 근거 검색 → 독성 계산 → 규칙 판정 → 답변 생성 → 검증 순서로 움직입니다. 체중당 독성 수치는 코드가 계산하고, 최종 등급은 규칙과 LLM 중 <strong>더 위험한 쪽</strong>을 따르기 때문에 LLM이 위험을 낮춰 말할 수 없습니다. 정보가 부족하면 최대 2번 되묻고, 범위 밖 질문은 거절합니다.</p>
+                            <p>이 중 제가 만든 부분은 앞단의 <strong>질문 분류 · 정보 추출 · 근거 검색</strong> 노드와, 이 그래프를 채팅 API에 연결한 부분입니다.</p>
+                            <figure>
+                                <a href="assets/images/pettriage-graph.png" target="_blank" rel="noopener"><img src="assets/images/pettriage-graph.png" alt="PetTriage LangGraph 질의 그래프, 노드 18개" loading="lazy"></a>
+                                <figcaption>LangGraph 질의 그래프 — 노드 18개 (팀 산출물)</figcaption>
                             </figure>
-                        </div>
-                    </div>
 
-                    <h4 class="block-title">결과</h4>
-                    <div class="metric-grid">
-                        <div class="metric">
-                            <span class="metric-value">45% <i class="fas fa-arrow-right"></i> 65%</span>
-                            <span class="metric-label">평가 통과율 (팀 성과)</span>
+                            <h5>팀 수치</h5>
+                            <ul>
+                                <li>평가 통과율 45% → 65%, 위험하게 낮춰 판정한 사례 0건</li>
+                                <li>근거 문서 888조각 (ChromaDB · bge-m3 임베딩)</li>
+                                <li>자동 테스트 682건 (4차 기준)</li>
+                            </ul>
                         </div>
-                        <div class="metric">
-                            <span class="metric-value">0건</span>
-                            <span class="metric-label">위험하게 낮춰 판정한 사례 (팀 성과)</span>
-                        </div>
-                        <div class="metric">
-                            <span class="metric-value">4건</span>
-                            <span class="metric-label">배포 중 만난 문제를 원인별로 해결</span>
-                        </div>
-                    </div>
+                    </details>
 
-                    <div class="story">
-                        <h4><i class="fas fa-lightbulb"></i> 어려웠던 점 — 배포 직후 HTTPS 요청이 400 오류로 거절됨</h4>
+                    <details>
+                        <summary>어려웠던 점 — 배포 직후 모든 HTTPS 요청이 400 오류로 거절됨</summary>
                         <dl>
-                            <div><dt>문제</dt><dd>배포를 마치고 HTTPS로 접속하자 요청이 400 Bad Request로 거절됐습니다.</dd></div>
-                            <div><dt>원인</dt><dd>nginx 기본 프록시 설정과 팀 프록시 설정이 함께 적용되면서 같은 헤더가 두 번 붙었습니다.</dd></div>
-                            <div><dt>해결</dt><dd>공통 프록시 설정을 파일 하나로 통일했습니다. 원래 접속 방식(https)은 로드밸런서가 넘긴 값을 그대로 전달했는데, nginx 기준 값을 쓰면 무한 리다이렉트가 나기 때문입니다. 대신 바깥에서 이 값을 위조하지 못하도록, 80 포트는 로드밸런서에서만 들어올 수 있게 보안그룹을 설정했습니다.</dd></div>
-                            <div><dt>그 밖에</dt><dd>상태 검사가 302를 받던 문제(검사 경로를 200을 주는 로그인 페이지로 변경), CSRF 403 오류, 가용 영역 연결 누락도 하나씩 원인을 찾아 해결했습니다.</dd></div>
+                            <dt>원인</dt>
+                            <dd>nginx 기본 프록시 설정과 팀 설정이 함께 적용되면서 같은 헤더가 두 번 붙었습니다.</dd>
+                            <dt>해결</dt>
+                            <dd>설정을 파일 하나로 통일했습니다. 접속 방식 값은 로드밸런서가 넘긴 것을 그대로 쓰되(바꾸면 무한 리다이렉트가 납니다), 위조를 막도록 80 포트는 로드밸런서에서만 들어오게 했습니다.</dd>
                         </dl>
+                    </details>
+
+                    <div class="learned">
+                        <b>배운 것</b>
+                        배포는 코드를 올리는 일이 아니라, 요청이 지나가는 길 전체를 이해하는 일이라는 것. 오류 하나하나를 그 길 위에서 찾아 고치며 배웠습니다.
                     </div>
 
-                    <div class="project-foot">
-                        <div class="tags">
-                            <span>Python</span><span>FastAPI</span><span>Django</span><span>LangGraph</span><span>LangChain</span><span>ChromaDB</span><span>bge-m3</span><span>OpenAI API</span><span>MySQL</span><span>SQLAlchemy</span><span>JWT</span><span>nginx</span><span>systemd</span><span>AWS</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN32-3rd-5Team" target="_blank" rel="noopener"><i class="fab fa-github"></i> 3차 저장소</a>
-                            <a href="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN32-4th-5Team" target="_blank" rel="noopener"><i class="fab fa-github"></i> 4차 저장소</a>
-                        </div>
+                    <p class="stack">Python · FastAPI · Django · LangGraph · MySQL · nginx · AWS (ALB · ACM · EC2)</p>
+                    <div class="links">
+                        <a href="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN32-3rd-5Team" target="_blank" rel="noopener">3차 저장소 →</a>
+                        <a href="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN32-4th-5Team" target="_blank" rel="noopener">4차 저장소 →</a>
                     </div>
                 </article>
 
-                <!-- Project 3: Signal-T -->
-                <article class="project-feature">
-                    <header class="project-head">
-                        <span class="project-index">03</span>
-                        <div>
-                            <h3 class="project-name">Signal-T</h3>
-                            <p class="project-summary">통신사 고객의 이탈을 예측하고, 로컬 LLM이 고객 유지 전략을 제안하는 서비스</p>
-                            <ul class="project-meta">
-                                <li>2026.06</li>
-                                <li>팀 5명</li>
-                                <li class="meta-role">백엔드·모델 학습 담당</li>
-                            </ul>
-                        </div>
-                    </header>
+                <article class="project">
+                    <p class="project-label">AI 캠프 2차 프로젝트</p>
+                    <h3>Signal-T</h3>
+                    <p class="one-line">떠날 것 같은 통신사 고객을 미리 찾고, 붙잡을 전략까지 제안하는 서비스</p>
+                    <p class="meta">2026.06 · 5명</p>
 
-                    <div class="project-body">
-                        <div class="project-text">
-                            <h4>문제</h4>
-                            <p>
-                                통신사는 가입자가 떠날 때마다 새 고객을 모으는 마케팅 비용이 커집니다.
-                                Signal-T는 떠날 위험이 큰 고객과 옮겨 갈 통신사를 미리 예측하고, 붙잡을 전략까지 제안합니다.
-                            </p>
-                            <h4>내가 한 일</h4>
-                            <ul class="work-list">
-                                <li><strong>이탈 예측 모델 학습</strong> — KISDI 한국미디어패널조사(2010~2024년, 118,336건)로 파생변수 5개를 만들고, 전처리와 XGBoost를 하나의 학습 파이프라인으로 묶어 저장했습니다.</li>
-                                <li><strong>예측 서비스 백엔드</strong> — 모델을 한 번만 불러와 재사용하고, 한 명씩 또는 CSV·엑셀 파일로 여러 고객을 한꺼번에 예측하는 기능을 만들었습니다.</li>
-                                <li><strong>로컬 LLM 분석</strong> — 일괄 예측 결과를 요약해 프롬프트로 만들고, 로컬 LLM(EXAONE 3.5)이 고객 유지 전략을 실시간으로 작성해 보여 주도록 연결했습니다. 외부 API 없이 사내에서 돌릴 수 있는 구조입니다.</li>
-                                <li><strong>로그인 흐름</strong> — 아이디·비밀번호 1차 인증 뒤 얼굴 2차 인증으로 이어지는 로그인·회원가입 화면 흐름을 구현하고, 얼굴 인식 모듈과 연결했습니다.</li>
-                            </ul>
-                        </div>
+                    <div class="my-part">
+                        <b>제가 맡은 부분</b>
+                        <p>예측 모델 학습과 서비스 백엔드, 그리고 로컬 LLM 연결을 맡았습니다.</p>
+                    </div>
 
-                        <div class="project-media">
-                            <div class="diagram">
-                                <p class="diagram-title">처리 흐름</p>
-                                <div class="flow">
-                                    <div class="flow-node">
-                                        <span class="flow-label">미디어패널 데이터</span>
-                                        <span class="flow-sub">2010~2024년 · 118,336건</span>
-                                    </div>
-                                    <div class="flow-node accent">
-                                        <span class="flow-label">학습 파이프라인</span>
-                                        <span class="flow-sub">전처리 + XGBoost · 연도 기준 분할</span>
-                                    </div>
-                                    <div class="flow-node accent">
-                                        <span class="flow-label">예측 서비스</span>
-                                        <span class="flow-sub">한 명씩 · 파일 일괄</span>
-                                    </div>
-                                    <div class="flow-node">
-                                        <span class="flow-label">로컬 LLM</span>
-                                        <span class="flow-sub">EXAONE 3.5 · 고객 유지 전략</span>
-                                    </div>
-                                </div>
+                    <h4>한 일</h4>
+                    <ul>
+                        <li>15년 치 조사 데이터(118,336건)로 전처리와 XGBoost를 하나의 학습 파이프라인으로 묶었습니다.</li>
+                        <li>한 명씩, 또는 파일로 여러 고객을 한꺼번에 예측하는 기능을 만들었습니다.</li>
+                        <li>예측 결과를 요약해 로컬 LLM(EXAONE 3.5)이 고객 유지 전략을 쓰도록 연결했습니다.</li>
+                    </ul>
+
+                    <figure>
+                        <video src="assets/video/signal-t-demo.mp4" controls preload="metadata" playsinline></video>
+                        <figcaption>시연 영상 (팀 산출물)</figcaption>
+                    </figure>
+
+                    <details class="deep">
+                        <summary>자세히 보기 — 데이터, 모델 성능, 서비스 구조</summary>
+                        <div class="deep-body">
+                            <h5>처리 흐름</h5>
+                            <div class="flow">
+                                <div class="node"><b>미디어패널 조사 데이터</b><small>KISDI · 2010~2024년 · 118,336건</small></div>
+                                <div class="node key"><b>학습 파이프라인</b><small>파생변수 5개 + 전처리 + XGBoost를 하나로 묶어 저장</small></div>
+                                <div class="node key"><b>예측 서비스</b><small>모델을 한 번만 불러와 재사용 · 한 명씩 / CSV·엑셀 일괄</small></div>
+                                <div class="node"><b>로컬 LLM</b><small>Ollama · EXAONE 3.5 (2.4B) · 고객 유지 전략을 실시간으로 작성</small></div>
                             </div>
-                            <figure class="figure video-figure">
-                                <video src="assets/video/signal-t-demo.mp4" controls preload="metadata" playsinline></video>
-                                <figcaption>시연 영상 (팀 산출물)</figcaption>
-                            </figure>
+
+                            <h5>데이터 나누기 — 미래 데이터가 섞이지 않게</h5>
+                            <div class="table-wrap">
+                                <table>
+                                    <thead>
+                                        <tr><th>구분</th><th>기간</th><th>건수</th></tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td>학습</td><td>~ 2020년</td><td class="num">91,378</td></tr>
+                                        <tr><td>검증</td><td>2021 ~ 2022년</td><td class="num">18,823</td></tr>
+                                        <tr><td>테스트</td><td>2023년 ~</td><td class="num">8,135</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="note">무작위로 나누면 미래 데이터로 과거를 맞히게 되어 점수가 실제보다 좋게 나옵니다. 그래서 "과거로 배워 미래를 맞히는" 실제 상황과 똑같이 나눴습니다.</p>
+
+                            <h5>모델 성능</h5>
+                            <div class="table-wrap">
+                                <table>
+                                    <thead>
+                                        <tr><th>모델</th><th>검증 ROC-AUC</th><th>테스트 ROC-AUC</th></tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td>XGBoost (제가 학습한 모델)</td><td>0.6501</td><td class="num">0.6339</td></tr>
+                                        <tr><td>LightGBM</td><td>0.6481</td><td class="num">0.6278</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="note">팀 최종 모델(LightGBM + XGBoost 앙상블)은 ROC-AUC 0.6715입니다 (팀 README 기준).</p>
+
+                            <h5>서비스 구조</h5>
+                            <ul>
+                                <li>화면은 Streamlit, 회원 정보는 MySQL</li>
+                                <li>아이디·비밀번호 1차 인증 뒤 얼굴 2차 인증 (팀의 얼굴 인식 모듈과 연결)</li>
+                                <li>일괄 예측 결과를 요약해 프롬프트로 만들고, LLM 답변을 실시간으로 이어서 표시</li>
+                                <li>외부 API 없이 사내에서 돌릴 수 있는 구조</li>
+                            </ul>
                         </div>
+                    </details>
+
+                    <div class="learned">
+                        <b>배운 것</b>
+                        무작위로 나누면 점수는 좋아 보이지만, 미래 데이터가 섞입니다. 점수보다 믿을 수 있는 평가가 먼저라는 것을 배웠습니다.
                     </div>
 
-                    <h4 class="block-title">결과</h4>
-                    <div class="metric-grid">
-                        <div class="metric">
-                            <span class="metric-value">0.6715</span>
-                            <span class="metric-label">팀 최종 모델 ROC-AUC (LightGBM + XGBoost 앙상블)</span>
-                        </div>
-                        <div class="metric">
-                            <span class="metric-value">0.634</span>
-                            <span class="metric-label">내 단일 XGBoost 모델 테스트 ROC-AUC</span>
-                        </div>
-                        <div class="metric">
-                            <span class="metric-value">3가지</span>
-                            <span class="metric-label">단건 예측 · 파일 일괄 예측 · LLM 전략 제안을 하나의 웹 서비스로</span>
-                        </div>
-                    </div>
-
-                    <div class="story">
-                        <h4><i class="fas fa-lightbulb"></i> 어려웠던 점 — 미래 데이터가 학습에 섞이지 않게 하기</h4>
-                        <dl>
-                            <div><dt>상황</dt><dd>15년 치 조사 데이터라, 무작위로 나누면 2024년 데이터로 학습하고 2015년을 맞히는 일이 생깁니다. 그러면 실제보다 점수가 좋게 나옵니다.</dd></div>
-                            <div><dt>해결</dt><dd>연도를 기준으로 학습(~2020년), 검증(2021~2022년), 테스트(2023년~)를 나눠 "과거로 배워 미래를 맞히는" 실제 상황과 똑같이 평가했습니다.</dd></div>
-                            <div><dt>배운 점</dt><dd>점수가 조금 낮아 보여도, 서비스에서 믿을 수 있는 평가가 더 중요하다는 걸 배웠습니다.</dd></div>
-                        </dl>
-                    </div>
-
-                    <div class="project-foot">
-                        <div class="tags">
-                            <span>Python</span><span>pandas</span><span>scikit-learn</span><span>XGBoost</span><span>LightGBM</span><span>Streamlit</span><span>MySQL</span><span>Ollama</span><span>EXAONE 3.5</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN32-2nd-1Team" target="_blank" rel="noopener"><i class="fab fa-github"></i> 팀 저장소</a>
-                        </div>
-                    </div>
+                    <p class="stack">Python · scikit-learn · XGBoost · Streamlit · MySQL · Ollama</p>
+                    <div class="links"><a href="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN32-2nd-1Team" target="_blank" rel="noopener">팀 저장소 →</a></div>
                 </article>
 
-                <!-- Other Projects -->
-                <h3 class="subsection-title">Other Projects</h3>
-                <div class="other-grid">
-                    <article class="other-card">
-                        <img class="other-thumb" src="assets/images/mycalendar.png" alt="바탕화면 달력 실행 화면: 월간 달력과 할 일 메모" loading="lazy" data-zoom>
-                        <div class="other-body">
-                            <p class="other-kind">개인 프로젝트</p>
-                            <h4>바탕화면 달력 (myCalendar)</h4>
-                            <p class="other-summary">Win+D를 눌러도 사라지지 않는 Windows 탁상 달력 + 할 일 위젯</p>
-                            <p class="other-meta">2026.10 · 1인 개발 · v1.4.0 출시 · MIT 라이선스</p>
-                            <ul>
-                                <li>한국 공휴일·대체공휴일, 음력 표시와 음력 반복 일정, 여러 날 일정, 끌어서 옮기기, 미니 모드, 한국어/영어</li>
-                                <li>바탕화면 창에 붙는 구조라, Windows 탐색기가 다시 시작돼도 몇 초 안에 스스로 다시 붙도록 처리</li>
-                                <li>하루 한 번 새 버전을 확인해 알림</li>
-                            </ul>
-                            <div class="tags"><span>C#</span><span>WPF</span></div>
-                            <div class="project-links">
-                                <a href="https://github.com/geunlee00/myCalendar" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
-                                <a href="https://github.com/geunlee00/myCalendar/releases/latest" target="_blank" rel="noopener"><i class="fas fa-download"></i> 내려받기</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="other-card">
-                        <div class="other-body">
-                            <p class="other-kind">SKN 1차 팀 프로젝트</p>
-                            <h4>S car</h4>
-                            <p class="other-summary">서울시 전기차 등록 현황 대시보드와 충전소 지도 검색</p>
-                            <p class="other-meta">2026.05 · 팀 4명 · 충전소 지도 기능 담당</p>
-                            <ul>
-                                <li>공공데이터 API로 서울 충전소 13,082곳을 수집해 충전소 단위로 묶고 MySQL에 저장·갱신</li>
-                                <li>주소·이름 검색과 카카오 지도 마커·정보창 구현</li>
-                                <li>구별 충전소 수, 전기차 비율, 전년 대비 월별 등록 대수를 집계해 대시보드에 연결</li>
-                            </ul>
-                            <div class="tags"><span>Python</span><span>Streamlit</span><span>MySQL</span><span>SQLAlchemy</span><span>Plotly</span><span>Kakao Map API</span></div>
-                            <div class="project-links">
-                                <a href="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN32-1st-5Team" target="_blank" rel="noopener"><i class="fab fa-github"></i> 팀 저장소</a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Experience Section -->
-        <section id="experience" class="experience-section">
-            <div class="container">
-                <h2 class="section-title">Work Experience</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-date">2022.03 – 2024.11</div>
-                        <div class="timeline-content">
-                            <h3>(주)제타시스템</h3>
-                            <p class="role">대리 · 웹 개발</p>
-                            <p class="description">
-                                Java·Spring 기반 ERP와 기업·공공기관 웹 시스템을 개발하고 운영했습니다.
-                                고객사 상주와 사내 개발을 병행하며 요구사항을 직접 받아 기능으로 옮겼고,
-                                기획에서 미처 예상하지 못한 예외 상황과 빈틈을 먼저 찾아 제안하며 요구사항을 함께 다듬었습니다.
-                            </p>
-                            <ul class="job-projects">
-                                <li class="highlight">
-                                    <div class="job-project-head">
-                                        <strong>오텍캐리어 ERP 시스템</strong>
-                                        <span>2022.07 – 2024.11</span>
-                                    </div>
-                                    <p>2인 개발팀으로 영업·구매·재고·생산·회계·서비스 접수 등 <strong>전 모듈 담당</strong>. 회사의 모든 물류가 거쳐 가는 핵심 시스템을 기존 시스템에서 새 시스템으로 옮기며 고도화했고, 이후 운영과 유지보수까지 이어서 맡았습니다.</p>
-                                    <div class="tags small"><span>Java</span><span>Spring</span><span>MS-SQL</span><span>SVN</span></div>
-                                </li>
-                                <li>
-                                    <div class="job-project-head">
-                                        <strong>비전통오일 시뮬레이션 웹</strong>
-                                        <span>2023.05 – 2024.03</span>
-                                    </div>
-                                    <p>시뮬레이션 로직과 데이터 처리 구현</p>
-                                    <div class="tags small"><span>Java</span><span>Spring</span><span>MySQL</span></div>
-                                </li>
-                                <li>
-                                    <div class="job-project-head">
-                                        <strong>SK쉴더스 모바일 얼굴인식</strong>
-                                        <span>2023.01 – 2023.05</span>
-                                    </div>
-                                    <p>얼굴인식 인증 모듈 연동과 백엔드 개발</p>
-                                    <div class="tags small"><span>Java</span><span>Spring</span><span>Git</span></div>
-                                </li>
-                                <li>
-                                    <div class="job-project-head">
-                                        <strong>고양시 사이버역사박물관</strong>
-                                        <span>2022.03 – 2024.08</span>
-                                    </div>
-                                    <p>유지보수, Oracle DB 관리, 기능 개선과 장애 대응</p>
-                                    <div class="tags small"><span>Java</span><span>Spring</span><span>Oracle</span></div>
-                                </li>
-                                <li>
-                                    <div class="job-project-head">
-                                        <strong>대한결핵협회 웹사이트</strong>
-                                        <span>2022.05 – 2022.08</span>
-                                    </div>
-                                    <p>유지보수와 추가 개발</p>
-                                    <div class="tags small"><span>Java</span><span>Spring</span><span>SVN</span></div>
-                                </li>
-                            </ul>
-                        </div>
+                <div class="small-grid">
+                    <h3>그 밖에 만든 것</h3>
+                    <div class="small">
+                        <h4>바탕화면 달력</h4>
+                        <p class="meta">개인 · 2026.10 · v1.4.0 출시</p>
+                        <p>Win+D를 눌러도 사라지지 않는 Windows 탁상 달력이에요. 제가 쓰려고 만들었고, 한국 공휴일과 음력까지 챙깁니다.</p>
+                        <img src="assets/images/mycalendar.png" alt="바탕화면 달력 화면" loading="lazy">
+                        <div class="links"><a href="https://github.com/geunlee00/myCalendar" target="_blank" rel="noopener">GitHub →</a><a href="https://github.com/geunlee00/myCalendar/releases/latest" target="_blank" rel="noopener">내려받기 →</a></div>
                     </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-date">2021.08 – 2022.02</div>
-                        <div class="timeline-content">
-                            <h3>(주)코젠아이</h3>
-                            <p class="role">사원 · 웹 개발</p>
-                            <ul class="job-projects">
-                                <li>
-                                    <div class="job-project-head">
-                                        <strong>I-Note 4.0 전자연구노트</strong>
-                                        <span>2021.08 – 2022.02</span>
-                                    </div>
-                                    <p>신규 솔루션 개발에 참여해, 연구 과제의 작업과 일정을 나눠 관리하는 WBS 기능과 연구노트 관리 페이지를 개발했습니다.</p>
-                                    <div class="tags small"><span>Java</span><span>Spring</span><span>Oracle</span></div>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="small">
+                        <h4>S car</h4>
+                        <p class="meta">AI 캠프 1차 · 2026.05 · 4명</p>
+                        <p>서울시 전기차 대시보드와 충전소 지도 검색이에요. 저는 공공 API로 충전소 13,082곳을 모아 DB에 넣고, 카카오 지도에 보여 주는 기능 전체를 맡았습니다.</p>
+                        <div class="links"><a href="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN32-1st-5Team" target="_blank" rel="noopener">팀 저장소 →</a></div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Skills Section -->
-        <section id="skills" class="skills-section">
-            <div class="container">
-                <h2 class="section-title">Technical Skills</h2>
-                <p class="section-lead">막대그래프 대신, 그 기술을 실제로 쓴 곳을 함께 적었습니다.</p>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3 class="category-title"><i class="fas fa-brain"></i> LLM · RAG</h3>
-                        <dl class="skill-rows">
-                            <div><dt>LangGraph, LangChain</dt><dd>PetTriage</dd></div>
-                            <div><dt>하이브리드 검색 (벡터 + BM25 + RRF), 리랭커 실험</dt><dd>S-Brain</dd></div>
-                            <div><dt>OpenAI API</dt><dd>S-Brain, PetTriage</dd></div>
-                            <div><dt>로컬 LLM (Ollama · EXAONE)</dt><dd>Signal-T</dd></div>
-                            <div><dt>평가셋 구축과 정량 평가</dt><dd>S-Brain</dd></div>
-                        </dl>
+        <!-- 일해 온 곳 -->
+        <section id="work">
+            <div class="wrap">
+                <h2>일해 온 곳</h2>
+                <div class="job">
+                    <div class="job-head">
+                        <h3>(주)제타시스템</h3>
+                        <span class="when">2022.03 – 2024.11</span>
                     </div>
-                    <div class="skill-category">
-                        <h3 class="category-title"><i class="fas fa-database"></i> 데이터 · ML</h3>
-                        <dl class="skill-rows">
-                            <div><dt>데이터 수집 파이프라인, 매일 배치 운영</dt><dd>S-Brain, S car</dd></div>
-                            <div><dt>scikit-learn, XGBoost, LightGBM</dt><dd>Signal-T</dd></div>
-                            <div><dt>임베딩, 벡터 DB (ChromaDB)</dt><dd>S-Brain, PetTriage</dd></div>
-                            <div><dt>LoRA 파인튜닝 (실험)</dt><dd>S-Brain</dd></div>
-                        </dl>
-                    </div>
-                    <div class="skill-category">
-                        <h3 class="category-title"><i class="fas fa-server"></i> 백엔드 · DB</h3>
-                        <dl class="skill-rows">
-                            <div><dt>Python — FastAPI, Django</dt><dd>S-Brain, PetTriage</dd></div>
-                            <div><dt>Java — Spring</dt><dd>실무 3년</dd></div>
-                            <div><dt>MySQL</dt><dd>S-Brain, PetTriage, Signal-T, S car</dd></div>
-                            <div><dt>Oracle, MS-SQL</dt><dd>실무</dd></div>
-                        </dl>
-                    </div>
-                    <div class="skill-category">
-                        <h3 class="category-title"><i class="fas fa-cloud"></i> 인프라 · 협업</h3>
-                        <dl class="skill-rows">
-                            <div><dt>AWS (EC2, ALB, ACM, RDS, S3, CloudFormation)</dt><dd>PetTriage, S-Brain</dd></div>
-                            <div><dt>nginx, systemd, cron, Docker</dt><dd>PetTriage, S-Brain</dd></div>
-                            <div><dt>AI 활용 개발 — Claude, Codex (구현과 교차 검수)</dt><dd>S-Brain</dd></div>
-                            <div><dt>Git (브랜치·PR), Jira, SVN</dt><dd>캠프 프로젝트, 실무</dd></div>
-                        </dl>
-                    </div>
-                    <div class="skill-category">
-                        <h3 class="category-title"><i class="fas fa-code"></i> 기타</h3>
-                        <dl class="skill-rows">
-                            <div><dt>C# · WPF</dt><dd>바탕화면 달력</dd></div>
-                            <div><dt>React, Vue.js — 기초</dt><dd>실무 중 학습, 개인 학습</dd></div>
-                        </dl>
-                    </div>
+                    <p class="role">대리 · 웹 개발</p>
+                    <ul>
+                        <li><strong>오텍캐리어 ERP</strong> — 두 명이서 영업·구매·재고·생산·회계·서비스 접수 전 모듈을 맡았습니다. 회사의 모든 물류가 지나가는 시스템을 새로 옮기고, 운영까지 책임졌습니다.</li>
+                        <li>고객사에 상주하며 요구사항을 직접 받았고, 기획에서 놓친 예외 상황을 먼저 짚어 함께 다듬었습니다.</li>
+                        <li>그 밖에 비전통오일 시뮬레이션 웹, SK쉴더스 모바일 얼굴인식 연동, 고양시 사이버역사박물관·대한결핵협회 유지보수를 했습니다.</li>
+                    </ul>
                 </div>
-
-                <h3 class="subsection-title">Education</h3>
-                <div class="edu-list">
-                    <div class="edu-item">
-                        <div>
-                            <h4>SK네트웍스 Family AI 캠프 32기</h4>
-                            <p>데이터 분석, 머신러닝·딥러닝, LLM·RAG, 멀티 에이전트, 클라우드 배포 / 팀 프로젝트 5회</p>
-                        </div>
-                        <span class="edu-date">2026.04 – 2026.10 (수료 예정)</span>
+                <div class="job">
+                    <div class="job-head">
+                        <h3>(주)코젠아이</h3>
+                        <span class="when">2021.08 – 2022.02</span>
                     </div>
-                    <div class="edu-item">
-                        <div>
-                            <h4>한국방송통신대학교 컴퓨터과학과</h4>
-                        </div>
-                        <span class="edu-date">재학 중</span>
-                    </div>
+                    <p class="role">사원 · 웹 개발</p>
+                    <ul>
+                        <li><strong>I-Note 4.0 전자연구노트</strong> — 신규 솔루션에서 WBS 기능과 연구노트 관리 페이지를 만들었습니다.</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section">
-            <div class="container">
-                <h2 class="section-title">Get In Touch</h2>
-                <div class="contact-content">
-                    <p class="contact-text">새로운 기회와 협업에 언제든 열려 있습니다.</p>
-                    <a href="mailto:kendong1818@gmail.com" class="btn primary-btn email-btn">
-                        <i class="fas fa-envelope"></i> kendong1818@gmail.com
-                    </a>
-                    <div class="social-links">
-                        <a href="https://github.com/geunlee00" class="social-icon" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    </div>
+        <!-- 기술 -->
+        <section id="skills">
+            <div class="wrap">
+                <h2>다룰 수 있는 기술</h2>
+                <dl class="skill-list">
+                    <dt>AI · 데이터</dt>
+                    <dd>LangGraph, OpenAI API, 로컬 LLM(Ollama), 하이브리드 검색, scikit-learn, XGBoost, 데이터 수집 배치</dd>
+                    <dt>백엔드</dt>
+                    <dd>Python(FastAPI, Django), Java(Spring) — 실무 3년</dd>
+                    <dt>데이터베이스</dt>
+                    <dd>MySQL, Oracle, MS-SQL</dd>
+                    <dt>배포 · 운영</dt>
+                    <dd>AWS(EC2, ALB, RDS, S3, CloudFormation), nginx, systemd, Docker</dd>
+                    <dt>일하는 방식</dt>
+                    <dd>Git으로 협업하고, Claude·Codex 같은 AI 도구로 만들되 테스트와 기록으로 확인합니다.</dd>
+                </dl>
+            </div>
+        </section>
+
+        <!-- 연락 -->
+        <section id="contact" class="contact">
+            <div class="wrap">
+                <h2>연락 주세요</h2>
+                <p>함께 일할 기회나 궁금한 점이 있다면 편하게 메일 주세요.</p>
+                <div class="hello-links" style="margin-top: 0;">
+                    <a class="pill primary" href="mailto:kendong1818@gmail.com">kendong1818@gmail.com</a>
+                    <a class="pill" href="https://github.com/geunlee00" target="_blank" rel="noopener">GitHub</a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="footer-content">
-            <p>&copy; 2026 Lee Geun-jun. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <div id="image-modal" class="image-modal" role="dialog" aria-modal="true" aria-label="그림 크게 보기">
-        <button class="close-modal" type="button" aria-label="닫기">&times;</button>
-        <img class="modal-content" id="modal-img" alt="">
-        <div id="caption"></div>
-    </div>
+    <footer>© 2026 이근준</footer>
 
     <script src="script.js"></script>
 </body>
